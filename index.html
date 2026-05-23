@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.832842397682">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 3.12.0">
+
+    <!-- Primary Meta Tags -->
+    <title>README</title>
+    <meta name="title" content="README">
+    <meta name="description" content="A community-driven, decentralized high-availability backup proxy network.">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/">
+    <meta property="og:title" content="README">
+    <meta property="og:description" content="A community-driven, decentralized high-availability backup proxy network.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="/">
+    <meta property="twitter:title" content="README">
+    <meta property="twitter:description" content="A community-driven, decentralized high-availability backup proxy network.">
+
+    <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
+
+    <link href="resources/css/retype.css?v=3.12.0.832842397682" rel="stylesheet">
+
+    <script data-cfasync="false" src="resources/js/config.js?v=3.12.0.832842397682" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="resources/js/retype.js?v=3.12.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="resources/js/lunr.js?v=3.12.0.832842397682" data-turbo-eval="false" defer></script>
+</head>
+<body>
+    <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
+        <div class="absolute bottom-0 left-0" style="top: 5rem; right: 50%"></div>
+    
+        <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-header-bg border-b border-header-border md:h-20">
+            <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="retype-sidebar-left-toggle-button"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="retype-branding-logo" href="" class="flex items-center leading-snug text-2xl">
+                            <span class="grow-0 shrink-0 overflow-hidden">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="false">
+                                <img class="max-h-10 hidden dark:inline-block" src="false">
+                            </span>
+                        </a>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav id="retype-header-nav" class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            
+                        </ul>
+                    </nav>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="retype-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+    
+        <div id="retype-container" class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
+            
+                <div class="flex items-center h-16 px-6">
+                    <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-none focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
+                </div>
+            
+                <div class="pl-6 mt-1 mb-4">
+                    <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-base-border">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-base-border">
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 bg-body-bg">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
+                            <div class="retype-markdown" id="retype-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="retype-sidebar-right-toggle"></div>
+                                <!-- Page content  -->
+<doc-anchor-target id="readme" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#readme">#</doc-anchor-trigger>
+        <span>README</span>
+    </h1>
+</doc-anchor-target>
+<img src="https://github.com/user-attachments/assets/b3d15fbd-3086-4911-b2ff-113a3483d96e" width="250" alt="Lucky_Logo" valign="left" />
+<img src="https://github.com/user-attachments/assets/63e3de5e-a7f2-4eb6-b3e2-8bebc9a30c07" width="180" alt="Lucky" valign="middle" />
+<p>A community-driven, decentralized high-availability backup proxy network. By routing production traffic through the Lucky cluster, developers can safeguard their applications against server failures and unexpected dropouts.</p>
+<hr>
+<doc-anchor-target id="how-the-infrastructure-works">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-the-infrastructure-works">#</doc-anchor-trigger>
+        <span>How the Infrastructure Works</span>
+    </h2>
+</doc-anchor-target>
+<p>Lucky acts as a reverse proxy shield sitting between your users and your real infrastructure node.</p>
+<ol>
+<li><strong>Traffic Entry:</strong> Visitors connect to your domain, which handles a fallback route directly to our central cluster nodes.</li>
+<li><strong>Proxy Pass:</strong> If your server is running safely, Lucky transparently pulls the content from your primary IP and hands it to the browser.</li>
+<li><strong>Failover Execution:</strong> If your primary node stops responding, Lucky intercepts the drop within 4 seconds and serves a clean, unified backup screen to prevent a 404 or a browser &quot;Server Not Found&quot; crash window.</li>
+</ol>
+<hr>
+<doc-anchor-target id="architecture-lifecycle-blueprint">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#architecture-lifecycle-blueprint">#</doc-anchor-trigger>
+        <span>Architecture Lifecycle Blueprint</span>
+    </h2>
+</doc-anchor-target>
+<p>[ Visitor Browser ] ➔ Requests Your Domain ➔ [ Lucky Master Proxy Node ]
+│
+┌─────────────┴─────────────┐
+▼                           ▼
+[ Your Primary Host Server ]    [ Lucky Backup Engine ]
+(<span class="docs-emoji">&#x1F7E2;</span> Target Responsive)         (<span class="docs-emoji">&#x1F534;</span> Target Crashed)
+│                              │
+Serves Live App Content       Serves Failover Screen</p>
+<hr>
+<doc-anchor-target id="step-by-step-configuration-guide">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-by-step-configuration-guide">#</doc-anchor-trigger>
+        <span>Step-by-Step Configuration Guide</span>
+    </h2>
+</doc-anchor-target>
+<p>To secure your server under the Lucky cluster network, follow these configuration phases carefully.</p>
+<doc-anchor-target id="phase-a-submit-your-server-coordinates-github-pr">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#phase-a-submit-your-server-coordinates-github-pr">#</doc-anchor-trigger>
+        <span>Phase A: Submit Your Server Coordinates (GitHub PR)</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><strong>Fork</strong> this repository to your personal GitHub profile by clicking the <strong>Fork</strong> button at the top right of this page.</li>
+<li>Navigate into the <strong><code translate="no" v-pre>nodes/</code></strong> directory within your personal fork.</li>
+<li>Tap <strong>Add file</strong> ➔ <strong>Create new file</strong>.</li>
+<li>Name the file exactly after your custom root domain path plus a <code translate="no" v-pre>.json</code> property extension (e.g., <code translate="no" v-pre>nodes/mycoolapp.com.json</code>).</li>
+<li>Paste the structural parameter code schema below inside your file, changing the strings to match your real endpoints:</li>
+</ol>
+<p>{
+&quot;domain&quot;: &quot;mycoolapp.com&quot;,
+&quot;primary_target_url&quot;: &quot;http://192.0.2.1:8080&quot;
+}</p>
+<p><em>Note: Make sure your <code translate="no" v-pre>primary_target_url</code> contains your specific open application port (like <code translate="no" v-pre>:80</code>, <code translate="no" v-pre>:8080</code>, or <code translate="no" v-pre>:3000</code>) and has no missing quotes or trailing commas.</em></p>
+<ol start="6">
+<li>Commit the file changes and submit a <strong>Pull Request</strong> back to our <code translate="no" v-pre>main</code> branch.</li>
+<li>The automated <strong>Lucky Node Validator Bot</strong> will scan your formatting. If it passes, an administrator will approve and merge your server parameters into active proxy memory!</li>
+</ol>
+<hr>
+<doc-anchor-target id="phase-b-hook-up-your-network-routing-using-the-render-url">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#phase-b-hook-up-your-network-routing-using-the-render-url">#</doc-anchor-trigger>
+        <span>Phase B: Hook Up Your Network Routing (Using the Render URL)</span>
+    </h3>
+</doc-anchor-target>
+<p>Once your Pull Request is merged, you must instruct the global domain system to route traffic through the Lucky central shield. You achieve this using our public <strong>Render Master Node Address</strong>.</p>
+<doc-anchor-target id="how-to-configure-your-dns-records">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-configure-your-dns-records">#</doc-anchor-trigger>
+        <span>How to configure your DNS records:</span>
+    </h4>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th style="text-align: left;">Record Type</th>
+<th style="text-align: left;">Host / Name</th>
+<th style="text-align: left;">Target / Value / Points To</th>
+<th style="text-align: left;">TTL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">CNAME</td>
+<td style="text-align: left;">@ (or leave empty)</td>
+<td style="text-align: left;">luckysrvr.onrender.com</td>
+<td style="text-align: left;">Automatic / 1 Hour</td>
+</tr>
+<tr>
+<td style="text-align: left;">CNAME</td>
+<td style="text-align: left;">www</td>
+<td style="text-align: left;">luckysrvr.onrender.com</td>
+<td style="text-align: left;">Automatic / 1 Hour</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>Crucial Note: Substitute the value target field with the precise, unique public live web app link running on our Render instance.</em></p>
+<ol start="5">
+<li><strong>Save</strong> the record changes. Allow up to 5-15 minutes for the new DNS instructions to update across the internet.</li>
+</ol>
+<hr>
+<doc-anchor-target id="advanced-hosting-a-lucky-master-node-on-a-vps">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#advanced-hosting-a-lucky-master-node-on-a-vps">#</doc-anchor-trigger>
+        <span>Advanced: Hosting a Lucky Master Node on a VPS</span>
+    </h2>
+</doc-anchor-target>
+<p>If you do not want to use Render and prefer to host your own independent Lucky cluster node on a Virtual Private Server (VPS) with 24/7 uptime and custom port flexibility, follow this enterprise installation manual.</p>
+<doc-anchor-target id="-minimum-server-requirements">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-minimum-server-requirements">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F3D7;&#xFE0F;</span> Minimum Server Requirements</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Operating System:</strong> Ubuntu 22.04 LTS or Ubuntu 24.04 LTS (Clean installation)</li>
+<li><strong>Specs:</strong> 1 vCPU, 1 GB RAM (Lightweight, zero-dependency script)</li>
+<li><strong>Ports to open:</strong> 8000 (Proxy Engine) and 22 (SSH Management)</li>
+</ul>
+<doc-anchor-target id="-step-by-step-vps-deployment-manual">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-step-by-step-vps-deployment-manual">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F6E0;&#xFE0F;</span> Step-by-Step VPS Deployment Manual</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="1-establish-secure-connection-to-your-vps">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-establish-secure-connection-to-your-vps">#</doc-anchor-trigger>
+        <span>1. Establish Secure Connection to Your VPS</span>
+    </h4>
+</doc-anchor-target>
+<p>Open your computer&#x27;s terminal (or the iSH App on iPad) and authenticate into your remote machine using your server&#x27;s public IP address:
+ssh <a href="mailto:root@YOUR">root@YOUR</a>_VPS_PUBLIC_IP</p>
+<doc-anchor-target id="2-system-optimization--dependency-setup">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-system-optimization--dependency-setup">#</doc-anchor-trigger>
+        <span>2. System Optimization &amp; Dependency Setup</span>
+    </h4>
+</doc-anchor-target>
+<p>Update the native Ubuntu packages and pull down the Python core environment tools:
+sudo apt update &amp;&amp; sudo apt upgrade -y
+sudo apt install python3 git -y</p>
+<doc-anchor-target id="3-clone-the-cluster-repository">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-clone-the-cluster-repository">#</doc-anchor-trigger>
+        <span>3. Clone the Cluster Repository</span>
+    </h4>
+</doc-anchor-target>
+<p>Pull the stable node logic directly into your server architecture:
+git clone <a href="https://github.com/LuckySrvr/LuckySrvr">https://github.com/LuckySrvr/LuckySrvr</a>
+cd LuckySrvr</p>
+<doc-anchor-target id="4-configure-as-a-persistent-background-daemon-systemd">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4-configure-as-a-persistent-background-daemon-systemd">#</doc-anchor-trigger>
+        <span>4. Configure as a Persistent Background Daemon (Systemd)</span>
+    </h4>
+</doc-anchor-target>
+<p>To ensure lucky_core.py doesn&#x27;t crash when you close your terminal, and automatically restarts if the VPS reboots, create an automated system service manager rule:</p>
+<p>sudo cat &lt;&lt; &#x27;EOF&#x27; &gt; /etc/systemd/system/lucky.service
+[Unit]
+Description=Lucky Failover Proxy Cluster Node
+After=network.target</p>
+<p>[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/Lucky
+ExecStart=/usr/bin/python3 /root/Lucky/lucky_core.py
+Restart=always
+RestartSec=5</p>
+<p>[Install]
+WantedBy=multi-user.target
+EOF</p>
+<doc-anchor-target id="5-ignite-the-server-core-engine">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#5-ignite-the-server-core-engine">#</doc-anchor-trigger>
+        <span>5. Ignite the Server Core Engine</span>
+    </h4>
+</doc-anchor-target>
+<p>Reload the service manager, hook your script into the boot sequence, and turn it on:
+sudo systemctl daemon-reload
+sudo systemctl enable lucky.service
+sudo systemctl start lucky.service</p>
+<doc-anchor-target id="6-inspect-active-log-streams">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#6-inspect-active-log-streams">#</doc-anchor-trigger>
+        <span>6. Inspect Active Log Streams</span>
+    </h4>
+</doc-anchor-target>
+<p>Verify that your VPS has successfully read the community nodes/ folder configurations and is actively listening for incoming public connections:
+sudo journalctl -u lucky.service -f</p>
+<p><em>(If successful, you will see output reading: Master cluster initialization sequence complete. Listening on port 8000...)</em></p>
+<hr>
+<doc-anchor-target id="-mapping-domains-to-your-custom-vps-node">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-mapping-domains-to-your-custom-vps-node">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F4E1;</span> Mapping Domains to Your Custom VPS Node</span>
+    </h3>
+</doc-anchor-target>
+<p>When users configure their DNS routing tables for a VPS node rather than Render, they cannot use a CNAME record for their root domain. Instead, they must implement a standard A Record:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th style="text-align: left;">Record Type</th>
+<th style="text-align: left;">Host / Name</th>
+<th style="text-align: left;">Target / Value / Points To</th>
+<th style="text-align: left;">TTL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">@ (or leave empty)</td>
+<td style="text-align: left;">YOUR_VPS_PUBLIC_IP</td>
+<td style="text-align: left;">1 Hour</td>
+</tr>
+<tr>
+<td style="text-align: left;">CNAME</td>
+<td style="text-align: left;">www</td>
+<td style="text-align: left;">yourdomain.com</td>
+<td style="text-align: left;">1 Hour</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<doc-anchor-target id="-how-to-synchronize-new-prs-to-the-vps-automatically">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-how-to-synchronize-new-prs-to-the-vps-automatically">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F504;</span> How to Synchronize New PRs to the VPS Automatically</span>
+    </h3>
+</doc-anchor-target>
+<p>When you merge a new user configuration on GitHub, the VPS node needs to pull those changes down. To handle this without touching the terminal, add an automated interval pull loop rule (Cronjob):</p>
+<ol>
+<li><p>Open your server&#x27;s scheduler panel:
+crontab -e</p>
+</li>
+<li><p>Paste this rule at the very bottom of the file to auto-sync git changes every 5 minutes:
+*/5 * * * * cd /root/Lucky &amp;&amp; git pull &amp;&amp; sudo systemctl restart lucky.service</p>
+</li>
+<li><p>Save and close. Your VPS will now run completely on autopilot!</p>
+</li>
+</ol>
+<hr>
+<doc-anchor-target id="cluster-health-and-maintenance-verifications">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#cluster-health-and-maintenance-verifications">#</doc-anchor-trigger>
+        <span>Cluster Health and Maintenance Verifications</span>
+    </h2>
+</doc-anchor-target>
+<p>Developers can test their active configurations or inspect the macro health status of the network at any time:</p>
+<ul>
+<li><strong>Inspect Network Pulse:</strong> Navigate straight to your cluster&#x27;s proxy address in your browser. This contacts the node to verify that the core proxy processes are awake and listening 24/7.</li>
+<li><strong>Format Checking:</strong> If you encounter error logs during your submission, run your file through Python&#x27;s local parser tool inside your workstation terminal to spot layout typos:
+python3 -m json.tool nodes/yourdomain.json</li>
+</ul>
+<hr>
+<doc-anchor-target id="licensing--operational-terms">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#licensing--operational-terms">#</doc-anchor-trigger>
+        <span>Licensing &amp; Operational Terms</span>
+    </h2>
+</doc-anchor-target>
+<p>This open-source cluster setup uses the MIT License standard. By routing nodes through Lucky, developers acknowledge that backup nodes act as voluntary high-availability endpoints without strict commercial service-level agreements.</p>
+
+                                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+                            </div>
+                            <footer id="retype-content-footer" class="clear-both">
+                            
+                            </footer>
+                        </main>
+                
+                        <div id="retype-page-footer" class="print:border-none border-t border-base-border pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between print:justify-center">
+                                <div id="retype-footer-links" class="print:hidden">
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                    </ul>
+                                </div>
+                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link text-sm leading-relaxed"></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="retype-overlay-target"></div>
+
+    <script data-cfasync="false">window.__DOCS__ = { "title": "README", isRoot: true, level: 0, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+</body>
+</html>
